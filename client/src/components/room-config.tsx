@@ -24,12 +24,12 @@ export default function RoomConfig({ dimensions, onDimensionsChange }: RoomConfi
     <div className="p-6 border-b border-border">
       <h2 className="text-lg font-semibold text-text mb-4 flex items-center">
         <Ruler className="text-primary mr-2" size={20} />
-        방 크기 설정
+        1. 공간 만들기: 당신의 방을 그려보세요
       </h2>
       <div className="space-y-4">
         <div className="grid grid-cols-2 gap-3">
           <div>
-            <Label className="block text-sm font-medium text-gray-700 mb-1">길이 (m)</Label>
+            <Label className="block text-sm font-medium text-muted-foreground mb-1">가로 (m)</Label>
             <Input
               type="number"
               step="0.1"
@@ -42,7 +42,7 @@ export default function RoomConfig({ dimensions, onDimensionsChange }: RoomConfi
             />
           </div>
           <div>
-            <Label className="block text-sm font-medium text-gray-700 mb-1">너비 (m)</Label>
+            <Label className="block text-sm font-medium text-muted-foreground mb-1">세로 (m)</Label>
             <Input
               type="number"
               step="0.1"
@@ -56,7 +56,7 @@ export default function RoomConfig({ dimensions, onDimensionsChange }: RoomConfi
           </div>
         </div>
         <div>
-          <Label className="block text-sm font-medium text-gray-700 mb-1">높이 (m)</Label>
+          <Label className="block text-sm font-medium text-muted-foreground mb-1">높이 (m)</Label>
           <Input
             type="number"
             step="0.1"
